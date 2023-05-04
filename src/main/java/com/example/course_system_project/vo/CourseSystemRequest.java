@@ -35,6 +35,28 @@ public class CourseSystemRequest {
 	public CourseSystemRequest() {
 
 	}
+	
+	
+
+	public CourseSystemRequest(List<String> courseID, String courseName, int weekday, int startTime, int endTime,
+			int courseUnit) {
+		super();
+		this.courseID = courseID;
+		this.courseName = courseName;
+		this.weekday = weekday;
+		this.startTime = startTime;
+		this.endTime = endTime;
+		this.courseUnit = courseUnit;
+	}
+
+
+
+	public CourseSystemRequest(List<String> courseID) {
+		super();
+		this.courseID = courseID;
+	}
+
+
 
 	public CourseSystemRequest(String studentID) {
 		super();

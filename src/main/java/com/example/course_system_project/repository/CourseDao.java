@@ -8,6 +8,7 @@ import com.example.course_system_project.entity.CourseInfo;
 
 public interface CourseDao extends JpaRepository<CourseInfo, String>  {
 	
-	public List<CourseInfo> findAllByCourseIDIn(List<String> courseId);
+	
+	public List<CourseInfo> findAllByCourseName(String name);
 
 }
